@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Return Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h3>Return Calculator</h3>
+        <p>Monthly Investment: (Rs)
+            <input type="number" id="amount" min="0">
+        </p>
+        <p>Rate Of Interest: (p.a %)
+            <input type="number" id="interest" min="0">
+        </p>
+        <p>Time Period: (Year)
+            <input type="number" id="year" min="0">
+        </p>
+        <button id='button' onclick="calculate()">Calculate</button>
+        <p>Invested Amount: (Rs)
+            <input type="number" id="invested" disabled>
+        </p>
+        <p>Estimated Return: (Rs)
+            <input type="number" id="estimate" disabled>
+        </p>
+        <p>Total Amount: (Rs)
+            <input type="number" id="total" disabled>
+        </p>
+    </div>
+
+    <script src="script.js">
+    </script>
+    <center>
+        <footer style="position: fixed; bottom: 2px">
+            <span aria-hidden="true"></span>
+            <span style="color: #d5eb46">Copyright <span style="color: #14c5f1">&copy;</span> 2023</span><span
+                style="color: #14c5f1"> || </span><span style="color: #d5eb46">Developed By</span><span
+                style="color: #14c5f1"> :: </span>
+            <a href="https://pabitrabanerjee.newsgoogle.org" target="_blank"
+                style="text-decoration: none; color: rgb(6, 91, 11); font-family: cursive; font-weight: bold;">Pabitra Banerjee</a>
+        </footer>
+    </center>
+</body>
+
+</html>
